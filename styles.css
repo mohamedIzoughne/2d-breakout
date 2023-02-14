@@ -1,0 +1,127 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(211, 247, 211);
+  position: relative;
+}
+.game {
+  width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.board {
+  --block-color: lightcoral;
+  --user-color: darkcyan;
+  --ball-color: grey;
+  height: 300px;
+  border: 3px solid var(--user-color);
+  position: relative;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.block {
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  background: var(--block-color);
+  border: 1px solid white;
+}
+
+.user {
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  background: var(--user-color);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.ball {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: var(--ball-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.play-btn {
+  display: block;
+  margin: 15px auto;
+  width: 100px;
+  padding-block: 10px;
+  background-color: rebeccapurple;
+  color: white;
+  font-size: 1.3rem;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  outline: none;
+}
+
+.play-btn:hover {
+  background-color: rgb(148, 99, 197);
+}
+
+.account {
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.avatar {
+  max-width: 100px;
+  margin-right: 15px;
+}
+
+.user-name {
+  margin-top: 10px;
+  margin-bottom: -2px;
+}
+
+/* ## Form page */
+.form-section {
+  width: 400px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.932);
+  width: 100vw;
+  height: 100vh;
+}
+
+.layer input {
+  width: 300px;
+  font-size: 1.5rem;
+}
+
+.layer button {
+  background-color: black;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}

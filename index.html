@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>2D BREAKOUT</title>
+</head>
+<body>
+    <div class="container">
+    <div class="account">
+        <div class="avatar">
+            <img src="avatar-06.png" class="img-fluid rounded-circle" alt="">
+        </div>
+        <div class="info">
+            <h4 class="user-name">
+            </h4>
+            <p class="level">
+                <label for="level">Level: </label>
+                <select name="" id="level" class="form-select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </p>
+        </div>
+    </div>
+    <div class="game mt-5">
+        <h2 id="score" class="score">Score: <span class="score-num">0</span></h2>
+        <div class="board">
+        </div>
+    </div>
+    <button class="play-btn">
+        Play
+    </button>
+    </div>
+    <div
+      class="layer d-flex justify-content-center align-items-center flex-column"
+    >
+      <label1 class="text-center text-white fs-4" for="name">Enter Your name:</label1>
+      <input type="text" id="name" class="form-control" placeholder="your name">
+      <button class="btn submit-btn btn-dark mt-1" type="submit">Enter</button>
+    </div>
+</body>
+<script src="app.js" type="module"></script>
+</html>
