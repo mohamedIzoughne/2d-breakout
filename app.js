@@ -266,15 +266,10 @@ function playGame() {
   currentBallPosition = [265, 40]
   xDirection = 2
   yDirection = 2
-  if (level === 9) {
-    leap = 15
-  } else if (level === 10) {
-    leap = 20
-  } else if (level === 11) {
-    leap = 25
-  } else if (level === 12) {
-    leap = 30
-  }
+
+  // update leap according the level
+  updateLevel(level)
+
   drawBall()
   clearInterval(timerId)
   document.addEventListener('keydown', moveUser)
@@ -284,9 +279,28 @@ function playGame() {
   }, levelsObj[level])
 }
 
-// play Sound When
+// play Sound When user collision
 function playSound() {
   setTimeout(() => {
     SoundEl.play()
   }, 100)
+}
+
+function updateLevel(l) {
+  switch (l) {
+    case 9:
+      leap = 15
+      break
+    case 10:
+      leap = 20
+      break
+    case 11:
+      leap = 25
+      break
+    case 12:
+      leap = 30
+      break
+    default:
+      leap = 10
+  }
 }
