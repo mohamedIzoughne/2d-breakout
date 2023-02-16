@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  background-color: rgb(211, 247, 211);
+  background-color: #30e3df;
   position: relative;
 }
 .game {
@@ -10,11 +10,11 @@ body {
 }
 
 .board {
-  --block-color: lightcoral;
-  --user-color: darkcyan;
-  --ball-color: grey;
+  --block-color: #76f3b4;
+  --user-color: #f9f871;
+  --ball-color: #ffe3f2;
   height: 300px;
-  border: 3px solid var(--user-color);
+  background-color: #00a8f7;
   position: relative;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -60,7 +60,7 @@ body {
   margin: 15px auto;
   width: 100px;
   padding-block: 10px;
-  background-color: rebeccapurple;
+  background-color: #b02262;
   color: white;
   font-size: 1.3rem;
   border: none;
