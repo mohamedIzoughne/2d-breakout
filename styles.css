@@ -1,8 +1,10 @@
 body {
   font-family: sans-serif;
-  background-color: #30e3df;
+  background: linear-gradient(to bottom, #30e3df, #00c8f3, #00a8f7);
+  height: 100vh;
   position: relative;
 }
+
 .game {
   width: 560px;
   margin-left: auto;
