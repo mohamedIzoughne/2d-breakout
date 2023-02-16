@@ -1,11 +1,13 @@
 // ######### Initialize important variables
-// Elements Variables
+// Select Elements
 const grid = document.querySelector('.board')
 const scoreEl = document.getElementById('score')
 const playBtn = document.querySelector('.play-btn')
 const submitBtn = document.querySelector('.submit-btn')
 const nameInp = document.getElementById('name')
 const layer = document.querySelector('.layer')
+const SoundEl = document.querySelector('audio')
+
 // Specific vars
 let score = 0
 let leap = 10
@@ -197,6 +199,7 @@ function checkCollisions() {
     currentBallPosition[1] < currentPosition[1] + blockHeight
   ) {
     changeDirection('y')
+    playSound()
   }
 
   if (
@@ -279,4 +282,11 @@ function playGame() {
     moveBall()
     checkCollisions()
   }, levelsObj[level])
+}
+
+// play Sound When
+function playSound() {
+  setTimeout(() => {
+    SoundEl.play()
+  }, 100)
 }
